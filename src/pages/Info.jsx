@@ -3,7 +3,7 @@ import CopyIPButton from "../components/CopyIPButton"
 
 const features = [
   {
-    icon: "version",
+    icon: "play",
     title: "Version",
     desc: "We run Minecraft 1.21.11, but support clients 1.21+. Bedrock clients are also supported.",
   },
@@ -45,17 +45,18 @@ const features = [
 ]
 
 const comparison = [
-  { label: "Hardware-accelerated rendering", vanilla: true, fabric: true },
-  { label: "Works with resource packs", vanilla: true, fabric: true },
-  { label: "Multi-threaded chunk rendering", vanilla: false, fabric: true },
-  { label: "Advanced block/entity culling", vanilla: false, fabric: true },
-  { label: "Faster world loading", vanilla: false, fabric: true },
-  { label: "Borderless fullscreen", vanilla: false, fabric: true },
-  { label: "Rebuilt lighting engine", vanilla: false, fabric: true },
-  { label: "Shader pack support", vanilla: false, fabric: true },
-  { label: "Connected textures", vanilla: false, fabric: true },
-  { label: "Configurable zoom", vanilla: false, fabric: true },
-  { label: "Dynamic lighting for held items", vanilla: false, fabric: true },
+  { label: "Anarchy freedom", other: true, hunger: true },
+  { label: "Clear, simple rules", other: true, hunger: true },
+  { label: "No pay-to-win or paid advantages", other: false, hunger: true },
+  { label: "Strong anti-cheat enforcement", other: false, hunger: true },
+  { label: "Transparent moderation", other: false, hunger: true },
+  { label: "High-performance server hardware", other: false, hunger: true },
+  { label: "Stable uptime & low latency", other: false, hunger: true },
+  { label: "Minimal, Vanilla+ mod list", other: false, hunger: true },
+  { label: "Active development & frequent updates", other: false, hunger: true },
+  { label: "Active Discord community", other: false, hunger: true },
+  { label: "Community voting & feedback", other: false, hunger: true },
+  { label: "Whitelist-free access", other: false, hunger: true },
 ]
 
 export default function Info() {
