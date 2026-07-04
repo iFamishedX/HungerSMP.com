@@ -1,11 +1,5 @@
+import { useState } from "react"
 import { GlassCard, GlassButton, usePageTitle, Icon, StatPill } from "ifamished-ui"
-
-const stats = [
-  { value: "24/7", label: "Uptime" },
-  { value: "Season 3", label: "Current Season" },
-  { value: "Vanilla+", label: "Gameplay Style" },
-  { value: "Active", label: "Community" },
-]
 
 const highlights = [
   {
@@ -30,8 +24,35 @@ const highlights = [
   },
 ]
 
+const techTags = ["Anarchy", "Vanilla+", "Community", "Survival", "SMP"]
+
+const stats = [
+  { value: "24 / 7", label: "Uptime" },
+  { value: "Season 10", label: "Current Season" },
+  { value: "Anarchy", label: "Gameplay Style" },
+  { value: "Active", label: "Community" },
+]
+
+function CopyIPButton() {
+  const [copied, setCopied] = useState(false)
+
+  return (
+    <GlassButton
+      variant="primary"
+      onClick={() => {
+        navigator.clipboard.writeText("mc.hungersmp.com")
+        setCopied(true)
+        setTimeout(() => setCopied(false), 1500)
+      }}
+    >
+      <Icon name="copy" size={16} />
+      {copied ? "Copied!" : "Copy IP"}
+    </GlassButton>
+  )
+}
+
 export default function Home() {
-  usePageTitle("HungerSMP")
+  usePageTitle("Hunger SMP")
 
   return (
     <div className="page">
@@ -44,7 +65,7 @@ export default function Home() {
           </div>
 
           <h1 className="hero-name">
-            <span className="gradient-text">HungerSMP</span>
+            <span className="gradient-text">Hunger SMP</span>
           </h1>
 
           <p className="hero-subtitle">
@@ -52,18 +73,26 @@ export default function Home() {
             and a friendly player base.
           </p>
 
+          <div
+            className="tech-tag-list"
+            style={{ justifyContent: "center", marginBottom: "var(--space-4)" }}
+          >
+            {techTags.map((tag) => (
+              <span key={tag} className="tech-tag">{tag}</span>
+            ))}
+          </div>
+
           <div className="hero-actions">
-            <GlassButton href="minecraft://hungersmp.com" variant="primary">
+            <CopyIPButton />
+
+            <GlassButton href="lunarclient://play?serverAddress=mc.hungersmp.com">
               <Icon name="play" size={16} />
-              Join Server
+              Play with Lunar Client
             </GlassButton>
-            <GlassButton to="/info">
+
+            <GlassButton to="/info" variant="ghost">
               <Icon name="info" size={16} />
-              Info
-            </GlassButton>
-            <GlassButton to="/faq" variant="ghost">
-              <Icon name="helpCircle" size={16} />
-              FAQ
+              Server Info
             </GlassButton>
           </div>
 
@@ -81,8 +110,7 @@ export default function Home() {
           <div className="section-label">Why play?</div>
           <h2>A server built for long-term survival.</h2>
           <p>
-            HungerSMP focuses on progression, community, and events — without
-            changing the core Minecraft experience.
+            The Hunger SMP focuses on progression, community, and events — without changing the core Minecraft experience.
           </p>
         </div>
 
@@ -103,11 +131,15 @@ export default function Home() {
       <div className="cta-section fade-in-up">
         <h2>Ready to join?</h2>
         <p>Connect now or read more about the server.</p>
+
         <div className="cta-actions">
-          <GlassButton href="minecraft://hungersmp.com" variant="primary">
+          <CopyIPButton />
+
+          <GlassButton href="lunarclient://play?serverAddress=mc.hungersmp.com" variant="ghost">
             <Icon name="play" size={16} />
-            Join Now
+            Play with Lunar Client
           </GlassButton>
+
           <GlassButton to="/info" variant="ghost">
             <Icon name="info" size={16} />
             Server Info

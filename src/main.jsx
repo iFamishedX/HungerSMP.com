@@ -8,7 +8,7 @@ import "ifamished-ui/styles/themes/aqua.css"
 
 // Site-specific styles
 import "./styles/background.css"
-// import "./styles/overrides.css"
+import "./styles/overrides.css"
 
 import App from "./App.jsx"
 
