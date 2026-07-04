@@ -1,6 +1,6 @@
 import { GlassButton, Icon } from "ifamished-ui"
 
-function CopyIPButton() {
+export default function CopyIPButton() {
   const [copied, setCopied] = useState(false)
 
   return (
