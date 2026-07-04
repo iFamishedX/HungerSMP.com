@@ -1,50 +1,156 @@
-import { GlassCard, usePageTitle } from "ifamished-ui"
+import { GlassCard, GlassButton, usePageTitle, Icon } from "ifamished-ui"
+import { CopyIPButton } from "../components/CopyIPButton"
+
+const features = [
+  {
+    icon: "version",
+    title: "Version",
+    desc: "We run Minecraft 1.21.11, but support clients 1.21+. Bedrock clients are also supported.",
+  },
+  {
+    icon: "cpu",
+    title: "High-Performance",
+    desc: "The Hunger SMP runs on a high-end, optimized server. Expect smooth gameplay even with many players online.",
+  },
+  {
+    icon: "map",
+    title: "Region",
+    desc: "Hosted in Ashburn, we have low latency for players in most regions.",
+  },
+  {
+    icon: "shield",
+    title: "Playstyle",
+    desc: "We offer a unique anarchy experience with very few rules. Players are free to build, destroy, fight, and explore as they wish.",
+  },
+  {
+    icon: "users",
+    title: "Whitelist",
+    desc: "Whitelist is disabled on our server. Anyone can join and play, no application or verification required.",
+  },
+  {
+    icon: "info",
+    title: "Rules",
+    desc: "Due to the anarchy nature of the server, our main rules are no hacking or exploiting. You can find a full list of rules on our Discord server.",
+  },
+  {
+    icon: "sparkles",
+    title: "Gameplay",
+    desc: "The Hunger SMP uses a small selection of mods to enhance gameplay. These mods are designed to improve performance, add quality-of-life features, and provide a more enjoyable experience.",
+  },
+  {
+    icon: "helpCircle",
+    title: "Store",
+    desc: "We do not have a store or any paid features. The server is free to play and we do not sell any in-game items or advantages.",
+  },
+]
+
+const comparison = [
+  { label: "Hardware-accelerated rendering", vanilla: true, fabric: true },
+  { label: "Works with resource packs", vanilla: true, fabric: true },
+  { label: "Multi-threaded chunk rendering", vanilla: false, fabric: true },
+  { label: "Advanced block/entity culling", vanilla: false, fabric: true },
+  { label: "Faster world loading", vanilla: false, fabric: true },
+  { label: "Borderless fullscreen", vanilla: false, fabric: true },
+  { label: "Rebuilt lighting engine", vanilla: false, fabric: true },
+  { label: "Shader pack support", vanilla: false, fabric: true },
+  { label: "Connected textures", vanilla: false, fabric: true },
+  { label: "Configurable zoom", vanilla: false, fabric: true },
+  { label: "Dynamic lighting for held items", vanilla: false, fabric: true },
+]
 
 export default function Info() {
-  usePageTitle("HungerSMP | Info")
+  usePageTitle("Hunger SMP | Info")
 
   return (
     <div className="page">
       <div className="page-header fade-in-up">
         <h1>Server Info</h1>
-        <p>Everything you need to know before joining HungerSMP.</p>
+        <p>Everything you need to know before joining the Hunger SMP.</p>
       </div>
 
+      {/* Feature cards */}
       <section className="section">
-        <GlassCard className="fade-in-up">
-          <h2>Server Details</h2>
-          <ul>
-            <li><strong>IP:</strong> hungersmp.com</li>
-            <li><strong>Version:</strong> 1.XX</li>
-            <li><strong>Region:</strong> US Central</li>
-            <li><strong>Whitelist:</strong> No</li>
-            <li><strong>Playstyle:</strong> Vanilla+</li>
-          </ul>
-        </GlassCard>
+        <div className="features-grid stagger">
+          {features.map(({ icon, title, desc }, i) => (
+            <GlassCard key={title} className="feature-card" style={{ "--i": i }}>
+              <div className="icon-badge">
+                <Icon name={icon} size={22} strokeWidth={1.75} />
+              </div>
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </GlassCard>
+          ))}
+        </div>
       </section>
 
+      {/* Comparison */}
       <section className="section">
-        <GlassCard className="fade-in-up">
-          <h2>Rules</h2>
-          <ul>
-            <li>No griefing or stealing.</li>
-            <li>No hacked clients or exploits.</li>
-            <li>Respect other players.</li>
-            <li>No lag machines or intentional server harm.</li>
-          </ul>
-        </GlassCard>
+        <div className="section-header">
+          <div className="section-label">Side by side</div>
+          <h2>Other servers vs Hunger SMP</h2>
+          <p>A direct comparison of what we stand for and offer.</p>
+        </div>
+
+        <div className="compare-grid stagger">
+          <GlassCard className="compare-card" style={{ "--i": 0 }}>
+            <div className="compare-card-header">
+              <div className="icon-badge" style={{ width: 36, height: 36 }}>
+                <Icon name="xCircle" size={18} strokeWidth={1.75} />
+              </div>
+              <h3>Other Servers</h3>
+            </div>
+            <ul className="compare-list">
+              {comparison.map(({ label, vanilla }, idx) => (
+                <li key={label}>
+                  <span className={`compare-list-icon compare-list-icon--${vanilla ? "yes" : "no"}`}>
+                    <Icon name={vanilla ? "check" : "x"} size={16} strokeWidth={2.5} />
+                  </span>
+                  {label}
+                </li>
+              ))}
+            </ul>
+          </GlassCard>
+
+          <GlassCard className="compare-card" style={{ "--i": 1 }}>
+            <div className="compare-card-header">
+              <div className="icon-badge" style={{ width: 36, height: 36 }}>
+                <Icon name="checkCircle" size={18} strokeWidth={1.75} />
+              </div>
+              <h3><span className="gradient-text">Hunger SMP</span></h3>
+            </div>
+            <ul className="compare-list">
+              {comparison.map(({ label, fabric }) => (
+                <li key={label}>
+                  <span className={`compare-list-icon compare-list-icon--${fabric ? "yes" : "no"}`}>
+                    <Icon name={fabric ? "check" : "x"} size={16} strokeWidth={2.5} />
+                  </span>
+                  {label}
+                </li>
+              ))}
+            </ul>
+          </GlassCard>
+        </div>
       </section>
 
-      <section className="section">
-        <GlassCard className="fade-in-up">
-          <h2>Gameplay</h2>
-          <p>
-            HungerSMP is a long-term survival world with light QoL enhancements,
-            community events, and seasonal progression. No pay-to-win, no admin
-            abuse — just pure SMP.
-          </p>
-        </GlassCard>
-      </section>
+      {/* CTA */}
+      <div className="cta-section fade-in-up">
+        <h2>Ready to join?</h2>
+        <p>Join our community and experience the best of Minecraft.</p>
+
+        <div className="cta-actions">
+          <CopyIPButton />
+
+          <GlassButton href="lunarclient://play?serverAddress=mc.hungersmp.com" variant="ghost">
+            <Icon name="play" size={16} />
+            Play with Lunar Client
+          </GlassButton>
+
+          <GlassButton to="/faq" variant="ghost">
+            <Icon name="info" size={16} />
+            FAQs
+          </GlassButton>
+        </div>
+      </div>
     </div>
   )
 }
