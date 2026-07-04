@@ -1,40 +1,37 @@
 import { GlassCard, GlassButton, usePageTitle, Icon, StatPill } from "ifamished-ui"
 
+const stats = [
+  { value: "24/7", label: "Uptime" },
+  { value: "Season 3", label: "Current Season" },
+  { value: "Vanilla+", label: "Gameplay Style" },
+  { value: "Active", label: "Community" },
+]
+
 const highlights = [
   {
-    icon: "bolt",
-    title: "Performance",
-    desc: "Powered by Sodium, Lithium, and Starlight — massive FPS gains over vanilla with no gameplay changes.",
+    icon: "users",
+    title: "Community Events",
+    desc: "Weekly challenges, boss hunts, and seasonal world events.",
   },
   {
-    icon: "palette",
-    title: "Visual Enhancements",
-    desc: "Connected textures, custom skies, zoom, and emissive rendering right out of the box.",
+    icon: "shield",
+    title: "Fair Play",
+    desc: "No pay-to-win, no admin abuse, no griefing — just pure SMP.",
+  },
+  {
+    icon: "map",
+    title: "Expansive World",
+    desc: "Large world border, custom structures, and long-term progression.",
   },
   {
     icon: "sparkles",
-    title: "Shader Support",
-    desc: "Full Iris integration. Drop in any OptiFine-compatible shader pack and switch in-game instantly.",
+    title: "Vanilla+ Enhancements",
+    desc: "Light QoL tweaks that keep the game feeling fresh without changing core gameplay.",
   },
-  {
-    icon: "puzzle",
-    title: "Modpack Friendly",
-    desc: "Lightweight and modular — every mod is independently removable with near-zero conflicts.",
-  },
-]
-
-const techTags = ["Fabric", "Sodium", "Iris", "Lithium", "Starlight", "DynamicLights"]
-
-const stats = [
-  { value: "8×", label: "FPS Boost" },
-  { value: "500k+", label: "Total Downloads" },
-  { value: "26.2", label: "Latest versions" },
-  { value: "<1 MB", label: "Lightweight Install" },
-  { value: "100%", label: "Free & open-source" },
 ]
 
 export default function Home() {
-  usePageTitle("OptiFine for Fabric")
+  usePageTitle("HungerSMP")
 
   return (
     <div className="page">
@@ -43,36 +40,30 @@ export default function Home() {
         <GlassCard variant="hero" className="hero fade-in-up">
           <div className="hero-eyebrow">
             <span className="hero-eyebrow-dot" />
-            Fabric Mod Collection
+            Survival Multiplayer
           </div>
 
           <h1 className="hero-name">
-            <span className="gradient-text">OptiFine for Fabric</span>
+            <span className="gradient-text">HungerSMP</span>
           </h1>
 
           <p className="hero-subtitle">
-            The modern, Fabric-native replacement for OptiFine — faster rendering,
-            beautiful shaders, and zero compromises on compatibility.
+            A long-term, community-driven Vanilla+ SMP with events, progression,
+            and a friendly player base.
           </p>
 
-          <div className="tech-tag-list" style={{ justifyContent: "center", marginBottom: "var(--space-4)" }}>
-            {techTags.map((tag) => (
-              <span key={tag} className="tech-tag">{tag}</span>
-            ))}
-          </div>
-
           <div className="hero-actions">
-            <GlassButton to="/download" variant="primary">
-              <Icon name="download" size={16} />
-              Download
+            <GlassButton href="minecraft://hungersmp.com" variant="primary">
+              <Icon name="play" size={16} />
+              Join Server
             </GlassButton>
-            <GlassButton to="/features">
-              <Icon name="sparkles" size={16} />
-              Features
+            <GlassButton to="/info">
+              <Icon name="info" size={16} />
+              Info
             </GlassButton>
-            <GlassButton to="/install" variant="ghost">
-              <Icon name="tool" size={16} />
-              Install Guide
+            <GlassButton to="/faq" variant="ghost">
+              <Icon name="helpCircle" size={16} />
+              FAQ
             </GlassButton>
           </div>
 
@@ -87,11 +78,11 @@ export default function Home() {
       {/* Overview */}
       <section className="section">
         <div className="section-header">
-          <div className="section-label">What's included</div>
-          <h2>Everything OptiFine offered — and more.</h2>
+          <div className="section-label">Why play?</div>
+          <h2>A server built for long-term survival.</h2>
           <p>
-            A curated collection of the best Fabric performance and visual mods,
-            pre-configured to work together seamlessly.
+            HungerSMP focuses on progression, community, and events — without
+            changing the core Minecraft experience.
           </p>
         </div>
 
@@ -110,16 +101,16 @@ export default function Home() {
 
       {/* CTA */}
       <div className="cta-section fade-in-up">
-        <h2>Ready to get started?</h2>
-        <p>Download the latest release and follow the guide — you'll be up and running in minutes.</p>
+        <h2>Ready to join?</h2>
+        <p>Connect now or read more about the server.</p>
         <div className="cta-actions">
-          <GlassButton to="/download" variant="primary">
-            <Icon name="download" size={16} />
-            Get the Latest Release
+          <GlassButton href="minecraft://hungersmp.com" variant="primary">
+            <Icon name="play" size={16} />
+            Join Now
           </GlassButton>
-          <GlassButton to="/install" variant="ghost">
-            <Icon name="tool" size={16} />
-            Installation Guide
+          <GlassButton to="/info" variant="ghost">
+            <Icon name="info" size={16} />
+            Server Info
           </GlassButton>
         </div>
       </div>
