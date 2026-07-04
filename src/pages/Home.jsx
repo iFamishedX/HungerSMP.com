@@ -29,8 +29,8 @@ const techTags = ["Anarchy", "Vanilla+", "Community", "Survival", "SMP"]
 
 const stats = [
   { value: "24 / 7", label: "Uptime" },
-  { value: "Season 10", label: "Current Season" },
-  { value: "Anarchy", label: "Gameplay Style" },
+  { value: "50ms", label: "Latency" },
+  { value: "Anarchy", label: "Freedom" },
   { value: "Active", label: "Community" },
 ]
 
