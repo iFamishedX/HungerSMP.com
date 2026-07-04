@@ -101,10 +101,10 @@ export default function Info() {
               <h3>Other Servers</h3>
             </div>
             <ul className="compare-list">
-              {comparison.map(({ label, vanilla }, idx) => (
+              {comparison.map(({ label, other }, idx) => (
                 <li key={label}>
-                  <span className={`compare-list-icon compare-list-icon--${vanilla ? "yes" : "no"}`}>
-                    <Icon name={vanilla ? "check" : "x"} size={16} strokeWidth={2.5} />
+                  <span className={`compare-list-icon compare-list-icon--${other ? "yes" : "no"}`}>
+                    <Icon name={other ? "check" : "x"} size={16} strokeWidth={2.5} />
                   </span>
                   {label}
                 </li>
@@ -120,10 +120,10 @@ export default function Info() {
               <h3><span className="gradient-text">Hunger SMP</span></h3>
             </div>
             <ul className="compare-list">
-              {comparison.map(({ label, fabric }) => (
+              {comparison.map(({ label, hunger }) => (
                 <li key={label}>
-                  <span className={`compare-list-icon compare-list-icon--${fabric ? "yes" : "no"}`}>
-                    <Icon name={fabric ? "check" : "x"} size={16} strokeWidth={2.5} />
+                  <span className={`compare-list-icon compare-list-icon--${hunger ? "yes" : "no"}`}>
+                    <Icon name={hunger ? "check" : "x"} size={16} strokeWidth={2.5} />
                   </span>
                   {label}
                 </li>
