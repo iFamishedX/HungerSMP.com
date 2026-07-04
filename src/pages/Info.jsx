@@ -1,5 +1,5 @@
 import { GlassCard, GlassButton, usePageTitle, Icon } from "ifamished-ui"
-import { CopyIPButton } from "../components/CopyIPButton"
+import CopyIPButton from "../components/CopyIPButton"
 
 const features = [
   {

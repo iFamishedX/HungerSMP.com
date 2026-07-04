@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { GlassCard, GlassButton, usePageTitle, Icon, StatPill } from "ifamished-ui"
-import { CopyIPButton } from "../components/CopyIPButton"
+import CopyIPButton from "../components/CopyIPButton"
 
 const highlights = [
   {
