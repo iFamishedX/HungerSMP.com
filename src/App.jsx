@@ -23,7 +23,7 @@ export default function App() {
     <>
       <Navbar
         brand="HungerSMP"
-        brandDotColor="#ef4444"
+        brandDotColor="#4f44ef"
         navItems={navItems}
       />
 
