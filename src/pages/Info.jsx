@@ -45,18 +45,21 @@ const features = [
 ]
 
 const comparison = [
-  { label: "Anarchy freedom", other: true, hunger: true },
+  // Shared traits (both true)
   { label: "Clear, simple rules", other: true, hunger: true },
-  { label: "No pay-to-win or paid advantages", other: false, hunger: true },
+  { label: "Active Discord community", other: true, hunger: true },
+  { label: "Stable uptime & low latency", other: true, hunger: true },
+  { label: "Whitelist-free access", other: true, hunger: true },
+  { label: "Basic anti-cheat protection", other: true, hunger: true },
+
+  // Hunger SMP advantages
   { label: "Strong anti-cheat enforcement", other: false, hunger: true },
+  { label: "Anarchy freedom", other: false, hunger: true },
+  { label: "Active development & frequent updates", other: false, hunger: true },
+  { label: "No pay-to-win or paid advantages", other: false, hunger: true },
   { label: "Transparent moderation", other: false, hunger: true },
   { label: "High-performance server hardware", other: false, hunger: true },
-  { label: "Stable uptime & low latency", other: false, hunger: true },
   { label: "Minimal, Vanilla+ mod list", other: false, hunger: true },
-  { label: "Active development & frequent updates", other: false, hunger: true },
-  { label: "Active Discord community", other: false, hunger: true },
-  { label: "Community voting & feedback", other: false, hunger: true },
-  { label: "Whitelist-free access", other: false, hunger: true },
 ]
 
 export default function Info() {
