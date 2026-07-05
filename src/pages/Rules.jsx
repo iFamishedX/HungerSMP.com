@@ -15,9 +15,11 @@ const ruleSections = [
               <h3>Allowed</h3>
             </div>
             <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
-              <li>Fabric client mods that do not give unfair advantages</li>
+              <li>Minecraft clients such as Lunar Client that do not give unfair advantages</li>
               <li>Performance mods (Sodium, Lithium, Starlight, etc.)</li>
               <li>Cosmetic mods (emotes, capes, UI tweaks)</li>
+              <li>PC optimization tools (MSI Afterburner, Swills, etc.)</li>
+              <li>Resource packs such as low fire and other visual enhancements</li>
             </ul>
           </GlassCard>
 
@@ -30,9 +32,9 @@ const ruleSections = [
               <h3>Not Allowed</h3>
             </div>
             <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
-              <li><strong>Hacked clients:</strong> kill‑aura, fly, speed, x‑ray</li>
-              <li><strong>Assistive mods:</strong> Bedrock bridging, auto‑clickers</li>
-              <li><strong>Duping clients:</strong> any mod designed to duplicate items</li>
+              <li>Hacked clients that offer modules designed to provide unfair advantages</li>
+              <li>Assistive mods (full list at /disallowed-mods)</li>
+              <li>Any mod designed to duplicate items</li>
             </ul>
           </GlassCard>
         </div>
@@ -54,10 +56,11 @@ const ruleSections = [
               <h3>Allowed</h3>
             </div>
             <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
-              <li>Griefing, stealing, raiding bases</li>
-              <li>PvP anywhere, anytime</li>
-              <li>Using natural game mechanics creatively</li>
-              <li>Exploration, world travel, base hunting</li>
+              <li>Attribute swapping</li>
+              <li>TNT dupers</li>
+              <li>Tripwire duping</li>
+              <li>String duping</li>
+              <li>Sand and Gravel duping</li>
             </ul>
           </GlassCard>
 
@@ -70,10 +73,10 @@ const ruleSections = [
               <h3>Not Allowed</h3>
             </div>
             <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
-              <li><strong>Lag machines:</strong> redstone spam, TNT dupers, chunk‑loaders</li>
-              <li><strong>Crash exploits:</strong> anything that intentionally crashes the server</li>
-              <li><strong>Chunk corruption:</strong> forcing illegal block states or world corruption</li>
-              <li><strong>Game‑breaking bugs:</strong> anything that destroys gameplay for others</li>
+              <li>Lag machines</li>
+              <li>Chunk loading for the purpose of increasing server load</li>
+              <li>Anything that intentionally crashes the server</li>
+              <li>Duping any items not in the allowed list</li>
             </ul>
           </GlassCard>
         </div>
@@ -98,7 +101,7 @@ const ruleSections = [
               <li>Issue warnings for minor issues</li>
               <li>Apply temporary bans for repeated offenses</li>
               <li>Ban hackers, exploiters, and rule‑breakers</li>
-              <li>Review appeals through Discord</li>
+              <li>Review appeals through Discord or email</li>
             </ul>
           </GlassCard>
 
@@ -113,7 +116,6 @@ const ruleSections = [
             <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
               <li>Interfere with gameplay or PvP</li>
               <li>Give items, bases, or advantages</li>
-              <li>Undo griefing or restore bases</li>
               <li>Ban players without evidence</li>
             </ul>
           </GlassCard>
