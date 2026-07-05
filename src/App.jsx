@@ -4,13 +4,13 @@ import { Navbar, Footer, ScrollToTop } from "ifamished-ui"
 import Home from "./pages/Home"
 import Info from "./pages/Info"
 import FAQ from "./pages/FAQ"
-import Changelogs from "./pages/Changelogs"
+import Rules from "./pages/rules"
 
 const navItems = [
   { to: "/", label: "Home", end: true },
   { to: "/info", label: "Info" },
   { to: "/faq", label: "FAQ" },
-  { to: "/changelogs", label: "Changelogs" },
+  { to: "/rules", label: "Rules" },
 ]
 
 const socials = [
@@ -34,7 +34,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/changelogs" element={<Changelogs />} />
+          <Route path="/rules" element={<Rules />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
