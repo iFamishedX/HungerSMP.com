@@ -4,7 +4,7 @@ import { Navbar, Footer, ScrollToTop } from "ifamished-ui"
 import Home from "./pages/Home"
 import Info from "./pages/Info"
 import FAQ from "./pages/FAQ"
-import Rules from "./pages/rules"
+import Rules from "./pages/Rules"
 
 const navItems = [
   { to: "/", label: "Home", end: true },
