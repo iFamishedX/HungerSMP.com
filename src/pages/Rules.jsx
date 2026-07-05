@@ -5,8 +5,8 @@ const ruleSections = [
     q: "Core Rules",
     a: (
       <>
-        <p>These are the non‑negotiable rules for playing on Hunger SMP.</p>
-        <ul>
+        <p>These are the non‑negotiable rules for playing on Hunger SMP:</p>
+        <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
           <li>
             <strong>No hacking or cheating:</strong> no kill‑aura, fly, x‑ray, duping clients, or unfair mods.
           </li>
@@ -30,8 +30,8 @@ const ruleSections = [
     q: "Gameplay Guidelines",
     a: (
       <>
-        <p>Hunger SMP is Anarchy + Vanilla+, with freedom and responsibility.</p>
-        <ul>
+        <p>Hunger SMP is Anarchy + Vanilla+, with freedom and responsibility:</p>
+        <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
           <li>
             <strong>Griefing is allowed:</strong> bases, items, and builds can be destroyed or stolen.
           </li>
@@ -55,8 +55,8 @@ const ruleSections = [
     q: "Enforcement & Bans",
     a: (
       <>
-        <p>How rules are enforced and what happens when they’re broken.</p>
-        <ul>
+        <p>How rules are enforced and what happens when they’re broken:</p>
+        <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
           <li>
             <strong>Warnings:</strong> minor issues may get a verbal or written warning.
           </li>
