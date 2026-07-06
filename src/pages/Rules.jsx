@@ -102,6 +102,7 @@ const ruleSections = [
               <li>Apply temporary bans for repeated offenses</li>
               <li>Ban hackers, exploiters, and rule‑breakers</li>
               <li>Review appeals through Discord or email</li>
+              <li>Reimburse players for items lost due to staff error</li>
             </ul>
           </GlassCard>
 
@@ -115,8 +116,9 @@ const ruleSections = [
             </div>
             <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
               <li>Interfere with gameplay or PvP</li>
-              <li>Give items, bases, or advantages</li>
               <li>Ban players without evidence</li>
+              <li>Blackmail users into compliance</li>
+              <li>Use exploits to gain evidence on suspected rule-breakers</li>
             </ul>
           </GlassCard>
         </div>
