@@ -112,7 +112,7 @@ const ruleSections = [
               </div>
               <h3>Not Allowed</h3>
             </div>
-              <p>Chat behavior is <strong>not moderated.</strong> 
+              <p>Chat behavior is <strong>not moderated.</strong>{" "}
               <a href="https://modrinth.com/mod/no-chat-reports" target="_blank" rel="noopener noreferrer">No Chat Reports</a> is installed, but Mojang may still ban players for any reason, including chat messages.</p>
               <p>The Hunger SMP does not endorse or take responsibility for player chat messages.</p>
           </GlassCard>
