@@ -22,7 +22,7 @@ export default function App() {
   return (
     <>
       <Navbar
-        brand="HungerSMP"
+        brand="Hunger SMP"
         brandDotColor="#4f44ef"
         navItems={navItems}
       />
@@ -40,9 +40,9 @@ export default function App() {
       </div>
 
       <Footer
-        brand="HungerSMP"
+        brand="Hunger SMP"
         socials={socials}
-        footerNote={`© ${new Date().getFullYear()} HungerSMP. Not affiliated with Mojang.`}
+        footerNote={`© ${new Date().getFullYear()} HungerNet. Not affiliated with Mojang.`}
       />
     </>
   )
