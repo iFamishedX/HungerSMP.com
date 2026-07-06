@@ -405,9 +405,9 @@
 }
 
 .compare-card a {
-  color: #fff;
+  color: var(--btn-primary-start);
 }
 
-.compare-card a:visited {
-  color: #fff;
+.compare-card a:hover {
+  color: var(--btn-primary-hover-start);
 }
