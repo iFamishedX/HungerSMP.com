@@ -5,18 +5,18 @@ import CopyIPButton from "../components/CopyIPButton"
 const highlights = [
   {
     icon: "users",
-    title: "Community Events",
-    desc: "Weekly challenges, boss hunts, and seasonal world events.",
+    title: "Community Driven",
+    desc: "A long-term anarchy SMP with a focus on community and player-driven content.",
   },
   {
     icon: "shield",
     title: "Fair Play",
-    desc: "No pay-to-win, no admin abuse, no griefing — just pure SMP.",
+    desc: "No pay-to-win, no admin abuse, no griefing — just pure anarchy SMP.",
   },
   {
     icon: "map",
     title: "Expansive World",
-    desc: "Large world border, custom structures, and long-term progression.",
+    desc: "Overhauled terrain generation, custom structures, and no capped world border.",
   },
   {
     icon: "sparkles",
@@ -52,8 +52,7 @@ export default function Home() {
           </h1>
 
           <p className="hero-subtitle">
-            A long-term, community-driven Vanilla+ SMP with events, progression,
-            and a friendly player base.
+            A long-term, community-driven anarchy SMP.
           </p>
 
           <div
@@ -91,9 +90,9 @@ export default function Home() {
       <section className="section">
         <div className="section-header">
           <div className="section-label">Why play?</div>
-          <h2>A server built for long-term survival.</h2>
+          <h2>A server built for anarchy freedom.</h2>
           <p>
-            The Hunger SMP focuses on progression, community, and events — without changing the core Minecraft experience.
+            The Hunger SMP focuses on vanilla+ enhancements, anarchy, and community-driven content.
           </p>
         </div>
 
