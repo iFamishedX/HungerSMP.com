@@ -404,10 +404,14 @@
   line-height: 1;
 }
 
-.compare-card a {
-  color: var(--btn-primary-start);
+.compare-card a:link {
+  color: var(--link-color);
+}
+
+.compare-card a:visited {
+  color: var(--link-visited-color);
 }
 
 .compare-card a:hover {
-  color: var(--btn-primary-hover-start);
+  color: var(--link-hover-color);
 }
