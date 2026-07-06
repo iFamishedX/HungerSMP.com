@@ -403,3 +403,11 @@
   margin: 0;
   line-height: 1;
 }
+
+.compare-card a {
+  color: #fff;
+}
+
+.compare-card a:visited {
+  color: #fff;
+}
