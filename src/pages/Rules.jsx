@@ -85,6 +85,47 @@ const ruleSections = [
   },
 
   {
+    q: "Chatting and Behavior",
+    a: (
+      <>
+        <div className="compare-grid" style={{ marginBottom: "1.5rem" }}>
+          {/* Allowed */}
+          <GlassCard className="compare-card">
+            <div className="compare-card-header">
+              <div className="icon-badge" style={{ width: 36, height: 36 }}>
+                <Icon name="checkCircle" size={18} strokeWidth={1.75} />
+              </div>
+              <h3>Allowed</h3>
+            </div>
+            <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
+              <li>Spamming</li>
+              <li>Trolling</li>
+              <li>Cursing</li>
+            </ul>
+          </GlassCard>
+
+          {/* Not Allowed */}
+          <GlassCard className="compare-card">
+            <div className="compare-card-header">
+              <div className="icon-badge" style={{ width: 36, height: 36 }}>
+                <Icon name="xCircle" size={18} strokeWidth={1.75} />
+              </div>
+              <h3>Not Allowed</h3>
+            </div>
+            <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
+              <li>
+                <p>No chat behavior is moderated.</p>
+                <p><strong>No Chat Reports</strong> is installed, but Mojang may still ban players for any reason, including chat messages.</p>
+                <p>Hunger SMP does not endorse or take responsibility for player chat messages.</p>
+              </li>
+            </ul>
+          </GlassCard>
+        </div>
+      </>
+    ),
+  },
+
+  {
     q: "Enforcement & Bans",
     a: (
       <>
