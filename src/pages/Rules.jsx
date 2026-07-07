@@ -165,7 +165,7 @@ const ruleSections = [
 ]
 
 export default function Rules() {
-  usePageTitle("HungerSMP | Rules")
+  usePageTitle("Hunger SMP | Rules")
 
   return (
     <div className="page">

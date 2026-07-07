@@ -20,7 +20,7 @@ const faqs = [
 ]
 
 export default function FAQ() {
-  usePageTitle("HungerSMP | FAQ")
+  usePageTitle("Hunger SMP | FAQ")
 
   return (
     <div className="page">
