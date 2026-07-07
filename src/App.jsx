@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom"
-import { Navbar, Footer, ScrollToTop } from "ifamished-ui"
+import { Navbar, Footer, ScrollToTop, ThemeSwitcher } from "ifamished-ui"
 
 import Home from "./pages/Home"
 import Info from "./pages/Info"
@@ -26,6 +26,9 @@ export default function App() {
         brandDotColor="#4f44ef"
         navItems={navItems}
       />
+
+      {/* Theme switcher lives here */}
+      <ThemeSwitcher />
 
       <ScrollToTop />
 
