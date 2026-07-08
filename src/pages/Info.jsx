@@ -30,7 +30,7 @@ const features = [
   {
     icon: "info",
     title: "Rules",
-    desc: "Due to the anarchy nature of the server, our main rules are no hacking or exploiting. You can find a full list of rules on our Discord server.",
+    desc: "Due to the anarchy nature of the server, our main rules are no hacking or exploiting. You can find a full list of rules in the \"Rules\" tab.",
   },
   {
     icon: "sparkles",
@@ -68,7 +68,9 @@ export default function Info() {
   return (
     <div className="page">
       <div className="page-header fade-in-up">
-        <h1>Server Info</h1>
+          <h1 className="hero-name">
+            <span className="gradient-text-minimal">Server Info</span>
+          </h1>
         <p>Everything you need to know before joining the Hunger SMP.</p>
       </div>
 
