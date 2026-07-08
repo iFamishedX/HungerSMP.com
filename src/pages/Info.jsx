@@ -69,7 +69,7 @@ export default function Info() {
     <div className="page">
       <div className="page-header fade-in-up">
           <h1 className="hero-name">
-            <span className="gradient-text-minimal">Server Info</span>
+            <span className="gradient-text">Server Info</span>
           </h1>
         <p>Everything you need to know before joining the Hunger SMP.</p>
       </div>
