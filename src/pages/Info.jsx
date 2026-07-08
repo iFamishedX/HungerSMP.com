@@ -68,9 +68,7 @@ export default function Info() {
   return (
     <div className="page">
       <div className="page-header fade-in-up">
-          <h1 className="hero-name">
-            <span className="gradient-text">Server Info</span>
-          </h1>
+        <h1>Server Info</h1>
         <p>Everything you need to know before joining the Hunger SMP.</p>
       </div>
 

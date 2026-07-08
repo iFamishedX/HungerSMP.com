@@ -170,9 +170,7 @@ export default function Rules() {
   return (
     <div className="page">
       <div className="page-header fade-in-up">
-        <h1 className="hero-name">
-          <span className="gradient-text">Rules</span>
-        </h1>
+        <h1>Rules</h1>
         <p>Click the dropdowns to view each rule section. These rules apply only to the Minecraft server.</p>
       </div>
 
