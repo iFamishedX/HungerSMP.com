@@ -25,7 +25,9 @@ export default function FAQ() {
   return (
     <div className="page">
       <div className="page-header fade-in-up">
-        <h1>FAQ</h1>
+          <h1 className="hero-name">
+            <span className="gradient-text-minimal">FAQ</span>
+          </h1>
         <p>Answers to the most common questions about the Hunger SMP.</p>
       </div>
 
