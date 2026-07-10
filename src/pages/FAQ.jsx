@@ -41,7 +41,7 @@ export default function FAQ() {
         <h2>Still have questions?</h2>
         <p>Join the Discord or browse the Docs for more detailed information.</p>
         <div className="cta-actions">
-          <GlassButton href="https://discord.gg/hungernet" variant="primary">
+          <GlassButton href="https://discord.gg/KQHZcWMFtf" variant="primary">
             <Icon name="discord" size={16} />
             Discord
           </GlassButton>

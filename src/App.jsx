@@ -14,8 +14,7 @@ const navItems = [
 ]
 
 const socials = [
-  { label: "Discord", href: "https://discord.gg/YOUR-SERVER" },
-  { label: "GitHub", href: "https://github.com/iFamishedX" },
+  { label: "Discord", href: "https://discord.gg/KQHZcWMFtf" },
 ]
 
 export default function App() {

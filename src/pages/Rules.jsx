@@ -186,7 +186,7 @@ export default function Rules() {
         <h2>Need more detail?</h2>
         <p>Join the Discord or check the FAQ for edge cases and clarifications.</p>
         <div className="cta-actions">
-          <GlassButton href="https://discord.gg/hungernet" variant="primary">
+          <GlassButton href="https://discord.gg/KQHZcWMFtf" variant="primary">
             <Icon name="discord" size={16} />
             Discord
           </GlassButton>
